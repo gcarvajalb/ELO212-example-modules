@@ -4,7 +4,7 @@ module semaforo(
 	input clock,
 	input reset,
 	input TA, TB,
-	output reg [2:0] LA, LB,
+	output reg [1:0] LA, LB,
 	output [1:0] state_out //esta salida es irrelevante para la funcionalidad
 	                       // solo se incluye para poder visualizarla en el testbech.
 	                       //Para la implementacion final debe eliminarse como salida.
@@ -19,40 +19,43 @@ module semaforo(
     localparam S1 = 2'd1;
     localparam S2 = 2'd2;
     localparam S3 = 2'd3;
-
+    
+    //output encoding
+    localparam GREEN = 2'b00;
+    localparam YELLOW = 2'b01;
+    localparam RED = 2'b10;
+    
     // one combinational block computes the next_state and outputs for the
     // current state
     always@(*) begin
         //using default assignments here allows to save space, helps on readability,
         // and reduces the changes of errors
         next_state = state;
-    	LA = 3'b100;
-    	LB = 3'b100;
+    	LA = RED;
+    	LB = RED;
     	
     	case (state)
     		S0: begin
-    			     LA = 3'b010;
+    			     LA = GREEN;
     			     if(TA == 1'b0) begin
     			 	   next_state = S1;
     		         end
     		    end
 
             S1: begin
-                    LA = 3'b001;
+                    LA = YELLOW;
                     next_state = S2;
                 end
             
             S2: begin
-                    LA = 3'b100;
-                    LB = 3'b010;
+                    LB = GREEN;
                     if(TB == 1'b0) begin
                         next_state = S3;
                     end
                 end
 
             S3: begin
-                    LA = 3'b100;
-                    LB = 3'b001;
+                    LB = YELLOW;
                 if(TB == 1'b0) begin
                     next_state = S0;
                 end

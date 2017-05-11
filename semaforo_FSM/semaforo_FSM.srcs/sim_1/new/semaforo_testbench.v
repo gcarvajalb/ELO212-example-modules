@@ -11,7 +11,7 @@ module testbench();
 	
 	//The outputs are wires. We don't connect them to anything, but we need to 
 	// declare them to visualize them in the output timing diagram
-	wire [2:0] LA, LB;
+	wire [1:0] LA, LB;
 	wire [1:0] state; 
 	
 	// an instance of the Device Under Test
@@ -26,22 +26,25 @@ module testbench();
         );
             
 	// generate a clock signal that inverts its value every five time units
-	always  #5 clock=~clock;
+	always  #25 clock=~clock;
 	
 	//here we assign values to the inputs
 	initial begin
 		clock = 1'b0;
-		reset = 1'b1;
+		reset = 1'b0;
 		TA = 1'b1;
 		TB = 1'b0;
-		#100;
+		#40 TB = 1'b1;
+		#60 reset = 1'b1;
+		#10 reset = 1'b0;
 		
-		reset = 1'b0;
-		#30 TA = 1'b0;
 		
-		#200 TB = 1'b1;
-		#100 TA = 1'b1;
-		#100 TB = 1'b0;
+		#38 TA = 1'b0;
+		    
+		
+		#206 TB = 1'b0;
+		#302 TA = 1'b1;
+		#40 TB = 1'b1;
 	end
 
 endmodule

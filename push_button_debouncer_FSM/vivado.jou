@@ -2,14 +2,15 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Fri May 05 11:47:04 2017
-# Process ID: 15196
-# Current directory: C:/test/push_button
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11728 C:\test\push_button\ejemplo_01.xpr
-# Log file: C:/test/push_button/vivado.log
-# Journal file: C:/test/push_button\vivado.jou
+# Start of session at: Wed May 10 14:54:57 2017
+# Process ID: 304
+# Current directory: C:/Users/Gonzalo/Dropbox/ELO212-example-modules/push_button_debouncer_FSM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10396 C:\Users\Gonzalo\Dropbox\ELO212-example-modules\push_button_debouncer_FSM\ejemplo_01.xpr
+# Log file: C:/Users/Gonzalo/Dropbox/ELO212-example-modules/push_button_debouncer_FSM/vivado.log
+# Journal file: C:/Users/Gonzalo/Dropbox/ELO212-example-modules/push_button_debouncer_FSM\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/test/push_button/ejemplo_01.xpr
+open_project C:/Users/Gonzalo/Dropbox/ELO212-example-modules/push_button_debouncer_FSM/ejemplo_01.xpr
 launch_simulation
 source testbench.tcl
+close_sim
