@@ -8,7 +8,7 @@ module UART_tx_control_wrapper
     input [15:0] SW,
     output [7:0] tx_data,
     output tx_start,
-    output [2:0] stateID
+    output [1:0] stateID
     );
 
 TX_control 

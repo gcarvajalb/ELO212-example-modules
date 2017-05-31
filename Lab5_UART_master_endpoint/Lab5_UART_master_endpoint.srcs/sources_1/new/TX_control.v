@@ -50,7 +50,7 @@ module TX_control
 							end
             
             DELAY_BYTE_0: 	begin
-								tx_data = tx_data16[15:8];
+								//tx_data = tx_data16[15:8];
 								if(hold_state_timer >= INTER_BYTE_DELAY) begin
 									if (send16)
 										next_state = SEND_BYTE_1;

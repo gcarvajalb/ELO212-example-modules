@@ -5,7 +5,7 @@ module TX_sequence
 	input PB,             //PushButton
 	output reg send16,    // Si esta alto, se deben transmitir 16 bits (2 bytes)
 	input busy,           // Si esta alto, la UART se encuentra transmitiendo un dato
-	output [2:0] stateID  // Indica en que estado de la secuencia esta para mostrarlo en los LEDs
+	output [1:0] stateID  // Indica en que estado de la secuencia esta para mostrarlo en los LEDs
     );
     
     reg[1:0] next_state, state; 

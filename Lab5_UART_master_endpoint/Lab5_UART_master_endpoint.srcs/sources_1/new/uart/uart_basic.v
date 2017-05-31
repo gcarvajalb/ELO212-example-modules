@@ -16,7 +16,7 @@ module uart_basic
 	input reset,
 	input rx,
 	output [7:0] rx_data,
-	output rx_ready,
+	output reg rx_ready,
 	output tx,
 	input tx_start,
 	input [7:0] tx_data,
@@ -25,6 +25,9 @@ module uart_basic
 
 	wire baud8_tick;
 	wire baud_tick;
+
+	reg rx_ready_sync;
+	wire rx_ready_pre;
 
 	uart_baud_tick_gen #(
 		.CLK_FREQUENCY(CLK_FREQUENCY),
@@ -42,8 +45,14 @@ module uart_basic
 		.baud8_tick(baud8_tick),
 		.rx(rx),
 		.rx_data(rx_data),
-		.rx_ready(rx_ready)
+		.rx_ready(rx_ready_pre)
 	);
+
+	always @(posedge clk) begin
+		rx_ready_sync <= rx_ready_pre;
+		rx_ready <= ~rx_ready_sync & rx_ready_pre;
+	end
+
 
 	uart_baud_tick_gen #(
 		.CLK_FREQUENCY(CLK_FREQUENCY),
