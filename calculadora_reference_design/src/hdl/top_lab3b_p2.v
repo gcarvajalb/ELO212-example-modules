@@ -27,9 +27,8 @@ module lab3bis_top
 	localparam S_RES = 'b1000;
 	reg [3:0] state, state_next = S_IN1;
 
-	/* Reset cuando se presionan todos los botones */
-	//wire fsm_reset = (button_states == 5'b11111);
-	wire fsm_reset = ~reset_n;
+	/* Reset cuando se presionan todos los botones (o el botón CPU_RESET) */
+	wire fsm_reset = (button_states == 5'b11111) || (~reset_n);
 
 	/* Operaciones de la ALU */
 	localparam ALU_OP_ADD = 'b001;
@@ -47,6 +46,7 @@ module lab3bis_top
 
 	/* Resultado de la ALU */
 	wire [15:0] alu_out;
+	wire [3:0] alu_flags;
 
 	always @(*) begin
 		alu_in1_next = alu_in1;
@@ -69,14 +69,18 @@ module lab3bis_top
 	end
 
 	always @(*) begin
-		case (button_states)
-		5'b00001: alu_op_next = ALU_OP_OR;
-		5'b00010: alu_op_next = ALU_OP_AND;
-		5'b00100: alu_op_next = ALU_OP_SUB;
-		5'b01000: alu_op_next = ALU_OP_ADD;
-		5'b00101: alu_op_next = ALU_OP_MUL; /* Down & Right */
-		default: alu_op_next = alu_op;
-		endcase
+		alu_op_next = alu_op;
+
+		if (state == S_OPE) begin
+			case (button_states)
+			5'b00001: alu_op_next = ALU_OP_OR;
+			5'b00010: alu_op_next = ALU_OP_AND;
+			5'b00100: alu_op_next = ALU_OP_SUB;
+			5'b01000: alu_op_next = ALU_OP_ADD;
+			5'b00101: alu_op_next = ALU_OP_MUL; /* Down & Right */
+			default: alu_op_next = alu_op;
+			endcase
+		end
 	end
 
 	/* Registar las entradas de la ALU */
@@ -88,11 +92,7 @@ module lab3bis_top
 		end else begin
 			alu_in1 <= alu_in1_next;
 			alu_in2 <= alu_in2_next;
-
-			if (state == S_OPE)
-				alu_op <= alu_op_next;
-			else
-				alu_op <= alu_op;
+			alu_op <= alu_op_next;
 		end
 	end
 
@@ -106,6 +106,20 @@ module lab3bis_top
 			state <= state;
 	end
 
+	/* Registrar las salidas de la ALU */
+	reg [15:0] alu_out_reg;
+	reg [3:0] alu_flags_reg;
+
+	always @(posedge clk) begin
+		if (state == S_RES) begin
+			alu_out_reg <= alu_out;
+			alu_flags_reg <= alu_flags;
+		end else begin
+			alu_out_reg <= alu_out_reg;
+			alu_flags_reg <= alu_flags_reg;
+		end
+	end
+
 	/* Divisor de reloj para display de 7 segmentos */
 	wire clk_ss;
 	clk_divider #(
@@ -116,10 +130,17 @@ module lab3bis_top
 		.clk_out(clk_ss)
 	);
 
-	/* Double dabble */
+	/*
+	 * Double dabble y su "glue logic" para saber si se trata de
+	 * un número negativo (en complemento a 2) y obtener su valor
+	 * absoluto.
+	 *
+	 * http://www.pcmag.com/encyclopedia/term/43822/glue-logic
+	 * https://es.wikipedia.org/wiki/L%C3%B3gica_de_pegamento
+	 */
 	wire [31:0] bcd;
 	wire [15:0] s16_tmp =
-		(state == S_RES) ? alu_out :
+		(state == S_RES) ? alu_out_reg :
 		(state == S_IN1) ? alu_in1 : alu_in2;
 	wire is_negative = s16_tmp[15];
 	wire [15:0] abs_tmp =
@@ -138,7 +159,7 @@ module lab3bis_top
 		.clk(clk_ss),
 		.clk_enable(1'b1),
 		.bcd(bcd),
-		.dots({4'd0, state}),
+		.dots({alu_flags_reg, state}),
 		.is_negative(is_negative),
 		.turn_off(1'b0),
 		.ss_value(ss_value),
@@ -153,7 +174,7 @@ module lab3bis_top
 		.in2(alu_in2),
 		.op(alu_op),
 		.out(alu_out),
-		.flags()
+		.flags(alu_flags)
 	);
 
 	/* Debouncers para cada botón */
