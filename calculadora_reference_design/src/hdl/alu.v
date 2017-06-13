@@ -13,7 +13,7 @@ module alu
 	input [2:0] op,
 
 	output signed [WIDTH-1:0] out,
-	output [4:0] flags
+	output [3:0] flags
 );
 
 	localparam ALU_OP_ADD = 'b001;
@@ -29,15 +29,12 @@ module alu
 	assign in2_ext = {in2[WIDTH-1], in2};
 
 	/* Flags */
-	reg error; // For undefined ALU operations
 	reg negative;
 	reg zero;
 	reg carry;
 	reg overflow;
 
 	always @(*) begin
-		error = 1'b0;
-
 		case (op)
 		ALU_OP_ADD:
 			out_ext = in1_ext + in2_ext;
@@ -49,10 +46,8 @@ module alu
 			out_ext = in1_ext & in2_ext;
 		ALU_OP_OR:
 			out_ext = in1_ext | in2_ext;
-		default: begin
-			error = 1'b1;
+		default:
 			out_ext = 'd0;
-		end
 		endcase
 	end
 
@@ -86,7 +81,7 @@ module alu
 
 	/* Zero value detection */
 	always @(*) begin
-		if (~error && out_ext == 'd0)
+		if (out_ext == 'd0)
 			zero = 1'b1;
 		else
 			zero = 1'b0;
@@ -94,6 +89,6 @@ module alu
 
 	/* Outputs */
 	assign out = out_ext[WIDTH-1:0];
-	assign flags = {error, negative, zero, carry, overflow};
+	assign flags = {negative, zero, carry, overflow};
 
 endmodule
