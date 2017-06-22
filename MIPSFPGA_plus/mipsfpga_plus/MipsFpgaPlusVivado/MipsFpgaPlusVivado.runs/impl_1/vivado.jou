@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sun Jun 18 22:34:30 2017
+# Process ID: 3356
+# Current directory: C:/github/mipsfpga_plus/MipsFpgaPlusVivado/MipsFpgaPlusVivado.runs/impl_1
+# Command line: vivado.exe -log nexys4_ddr.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source nexys4_ddr.tcl -notrace
+# Log file: C:/github/mipsfpga_plus/MipsFpgaPlusVivado/MipsFpgaPlusVivado.runs/impl_1/nexys4_ddr.vdi
+# Journal file: C:/github/mipsfpga_plus/MipsFpgaPlusVivado/MipsFpgaPlusVivado.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source nexys4_ddr.tcl -notrace

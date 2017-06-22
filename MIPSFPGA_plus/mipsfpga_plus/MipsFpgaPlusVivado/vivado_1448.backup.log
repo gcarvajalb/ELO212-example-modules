@@ -1,0 +1,100 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue Jun 20 15:09:48 2017
+# Process ID: 1448
+# Current directory: C:/Users/Gonzalo/Desktop/1-FPGA/github/mipsfpga_plus/MipsFpgaPlusVivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7400 C:\Users\Gonzalo\Desktop\1-FPGA\github\mipsfpga_plus\MipsFpgaPlusVivado\MipsFpgaPlusVivado.xpr
+# Log file: C:/Users/Gonzalo/Desktop/1-FPGA/github/mipsfpga_plus/MipsFpgaPlusVivado/vivado.log
+# Journal file: C:/Users/Gonzalo/Desktop/1-FPGA/github/mipsfpga_plus/MipsFpgaPlusVivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Gonzalo/Desktop/1-FPGA/github/mipsfpga_plus/MipsFpgaPlusVivado/MipsFpgaPlusVivado.xpr
+INFO: [Project 1-313] Project file moved from 'C:/github/mipsfpga_plus/MipsFpgaPlusVivado' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:30 ; elapsed = 00:00:16 . Memory (MB): peak = 799.230 ; gain = 140.395
+close_project
+create_project project_1 C:/Users/Gonzalo/Desktop/Lab6_PS2_VGA_reference/project_1 -part xc7a100tcsg324-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+add_files -norecurse C:/Users/Gonzalo/Desktop/Lab6_PS2_VGA_reference/lab_6.v
+add_files -norecurse {C:/Users/Gonzalo/Desktop/Lab6_PS2_VGA_reference/kbd_ms.v C:/Users/Gonzalo/Desktop/Lab6_PS2_VGA_reference/driver_vga.v C:/Users/Gonzalo/Desktop/Lab6_PS2_VGA_reference/video_testpattern.v C:/Users/Gonzalo/Desktop/Lab6_PS2_VGA_reference/hello_world.v C:/Users/Gonzalo/Desktop/Lab6_PS2_VGA_reference/lab_6.v C:/Users/Gonzalo/Desktop/Lab6_PS2_VGA_reference/characters.v C:/Users/Gonzalo/Desktop/Lab6_PS2_VGA_reference/templates.v C:/Users/Gonzalo/Desktop/Lab6_PS2_VGA_reference/test_pattern_previo.v}
+WARNING: [filemgmt 56-12] File 'C:/Users/Gonzalo/Desktop/Lab6_PS2_VGA_reference/lab_6.v' cannot be added to the project because it already exists in the project, skipping this file
+create_ip -name clk_wiz -vendor xilinx.com -library ip -version 5.3 -module_name clk_wiz_0 -dir c:/Users/Gonzalo/Desktop/Lab6_PS2_VGA_reference/project_1/project_1.srcs/sources_1/ip
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {82} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {10.250} CONFIG.MMCM_CLKOUT0_DIVIDE_F {12.500} CONFIG.CLKOUT1_JITTER {133.865} CONFIG.CLKOUT1_PHASE_ERROR {96.739}] [get_ips clk_wiz_0]
+generate_target {instantiation_template} [get_files c:/Users/Gonzalo/Desktop/Lab6_PS2_VGA_reference/project_1/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+generate_target all [get_files  c:/Users/Gonzalo/Desktop/Lab6_PS2_VGA_reference/project_1/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'...
+export_ip_user_files -of_objects [get_files c:/Users/Gonzalo/Desktop/Lab6_PS2_VGA_reference/project_1/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/Gonzalo/Desktop/Lab6_PS2_VGA_reference/project_1/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+launch_runs -jobs 2 clk_wiz_0_synth_1
+[Tue Jun 20 18:19:30 2017] Launched clk_wiz_0_synth_1...
+Run output will be captured here: C:/Users/Gonzalo/Desktop/Lab6_PS2_VGA_reference/project_1/project_1.runs/clk_wiz_0_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/Gonzalo/Desktop/Lab6_PS2_VGA_reference/project_1/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -directory C:/Users/Gonzalo/Desktop/Lab6_PS2_VGA_reference/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Gonzalo/Desktop/Lab6_PS2_VGA_reference/project_1/project_1.ip_user_files -ipstatic_source_dir C:/Users/Gonzalo/Desktop/Lab6_PS2_VGA_reference/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Gonzalo/Desktop/Lab6_PS2_VGA_reference/project_1/project_1.cache/compile_simlib/modelsim} {questa=C:/Users/Gonzalo/Desktop/Lab6_PS2_VGA_reference/project_1/project_1.cache/compile_simlib/questa} {riviera=C:/Users/Gonzalo/Desktop/Lab6_PS2_VGA_reference/project_1/project_1.cache/compile_simlib/riviera} {activehdl=C:/Users/Gonzalo/Desktop/Lab6_PS2_VGA_reference/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_runs synth_1 -jobs 2
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/Gonzalo/Desktop/Lab6_PS2_VGA_reference/lab_6.v" into library work [C:/Users/Gonzalo/Desktop/Lab6_PS2_VGA_reference/lab_6.v:1]
+[Tue Jun 20 18:22:32 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Gonzalo/Desktop/Lab6_PS2_VGA_reference/project_1/project_1.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/Gonzalo/Desktop/Lab6_PS2_VGA_reference/characters.v" into library work [C:/Users/Gonzalo/Desktop/Lab6_PS2_VGA_reference/characters.v:1]
+[Tue Jun 20 18:23:53 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Gonzalo/Desktop/Lab6_PS2_VGA_reference/project_1/project_1.runs/synth_1/runme.log
+add_files -fileset constrs_1 -norecurse C:/Users/Gonzalo/Desktop/Lab6_PS2_VGA_reference/UART_master_endpoint_constraints.xdc
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed Jun 21 10:31:23 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Gonzalo/Desktop/Lab6_PS2_VGA_reference/project_1/project_1.runs/synth_1/runme.log
+[Wed Jun 21 10:31:23 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Gonzalo/Desktop/Lab6_PS2_VGA_reference/project_1/project_1.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.4
+  **** Build date : Jan 23 2017-19:37:29
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A3FCFBA
+set_property PROGRAM.FILE {C:/Users/Gonzalo/Desktop/Lab6_PS2_VGA_reference/project_1/project_1.runs/impl_1/lab_6.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Gonzalo/Desktop/Lab6_PS2_VGA_reference/project_1/project_1.runs/impl_1/lab_6.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210292A3FCFBA.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A3FCFBA
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 21 19:49:58 2017...

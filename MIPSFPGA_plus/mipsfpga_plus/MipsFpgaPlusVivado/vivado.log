@@ -1,0 +1,125 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Jun 21 22:25:28 2017
+# Process ID: 13176
+# Current directory: C:/Users/Gonzalo/Dropbox/ELO212-example-modules/github/mipsfpga_plus/MipsFpgaPlusVivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10696 C:\Users\Gonzalo\Dropbox\ELO212-example-modules\github\mipsfpga_plus\MipsFpgaPlusVivado\MipsFpgaPlusVivado.xpr
+# Log file: C:/Users/Gonzalo/Dropbox/ELO212-example-modules/github/mipsfpga_plus/MipsFpgaPlusVivado/vivado.log
+# Journal file: C:/Users/Gonzalo/Dropbox/ELO212-example-modules/github/mipsfpga_plus/MipsFpgaPlusVivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Gonzalo/Dropbox/ELO212-example-modules/github/mipsfpga_plus/MipsFpgaPlusVivado/MipsFpgaPlusVivado.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/github/mipsfpga_plus/MipsFpgaPlusVivado'
+INFO: [Project 1-313] Project file moved from 'C:/github/mipsfpga_plus/MipsFpgaPlusVivado' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_const.vh', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_const.vh'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_config.vh', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_config.vh'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/mvp_cregister.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/mvp_cregister.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/mvp_cregister_ngc.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/mvp_cregister_ngc.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/mvp_register.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/mvp_register.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/mvp_cregister_wide_tlb.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/mvp_cregister_wide_tlb.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/mvp_register_ngc.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/mvp_register_ngc.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/mvp_cregister_wide_utlb.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/mvp_cregister_wide_utlb.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/mvp_cregister_wide.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/mvp_cregister_wide.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_mmu.vh', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_mmu.vh'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_tlb_jtlb1entry.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_tlb_jtlb1entry.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_gf_mux2.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_gf_mux2.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_ejt_and2.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_ejt_and2.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/mvp_ucregister_wide.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/mvp_ucregister_wide.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/mvp_register_s.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/mvp_register_s.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/mvp_register_c.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/mvp_register_c.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/mvp_mux4.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/mvp_mux4.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/mvp_mux2.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/mvp_mux2.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/mvp_mux1hot_9.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/mvp_mux1hot_9.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/mvp_mux1hot_5.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/mvp_mux1hot_5.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/mvp_mux1hot_4.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/mvp_mux1hot_4.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/mvp_mux1hot_13.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/mvp_mux1hot_13.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/mvp_cregister_s.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/mvp_cregister_s.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/mvp_cregister_c.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/mvp_cregister_c.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_tlb_utlbentry.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_tlb_utlbentry.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_tlb_jtlb4entries.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_tlb_jtlb4entries.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_ejt_mux2.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_ejt_mux2.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_ejt_bus32mux2.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_ejt_bus32mux2.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_ejt_async_snd.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_ejt_async_snd.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_ejt_async_rec.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_ejt_async_rec.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_edp_clz_4b.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_edp_clz_4b.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_clockxnorgate.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_clockxnorgate.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/mvp_mux1hot_8.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/mvp_mux1hot_8.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/mvp_mux1hot_6.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/mvp_mux1hot_6.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/mvp_latchn.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/mvp_latchn.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_tlb_utlb.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_tlb_utlb.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_tlb_jtlb16entries.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_tlb_jtlb16entries.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_mdl_add_simple.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_mdl_add_simple.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_ejt_tck.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_ejt_tck.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_ejt_tap_pcsamstub.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_ejt_tap_pcsamstub.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_ejt_tap_fdcstub.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_ejt_tap_fdcstub.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_ejt_tap_dasamstub.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_ejt_tap_dasamstub.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_ejt_ibrk.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_ejt_ibrk.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_ejt_gate.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_ejt_gate.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_ejt_dbrk.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_ejt_dbrk.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_edp_clz_16b.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_edp_clz_16b.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_cpz_watch_stub.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_cpz_watch_stub.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_cpz_pc.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_cpz_pc.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_cpz_guest_srs1.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_cpz_guest_srs1.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/RAMB4K_S8.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/RAMB4K_S8.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/RAMB4K_S2.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/RAMB4K_S2.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/RAMB4K_S16.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/RAMB4K_S16.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/mvp_mux8.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/mvp_mux8.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/mvp_mux1hot_3.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/mvp_mux1hot_3.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/mvp_mux1hot_24.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/mvp_mux1hot_24.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/mvp_mux1hot_10.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/mvp_mux1hot_10.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/mvp_mux16.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/mvp_mux16.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_tlb_jtlb16.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_tlb_jtlb16.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_tlb_itlb.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_tlb_itlb.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_tlb_dtlb.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_tlb_dtlb.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_tlb_ctl.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_tlb_ctl.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_tlb_cpy.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_tlb_cpy.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_tlb_collector.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_tlb_collector.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_siu_int_sync.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_siu_int_sync.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_rf_stub.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_rf_stub.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_rf_rngc.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_rf_rngc.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_mpc_exc.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_mpc_exc.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_mpc_dec.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_mpc_dec.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_mpc_ctl.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_mpc_ctl.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_mmuc.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_mmuc.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_mdl_dp.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_mdl_dp.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_mdl_ctl.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_mdl_ctl.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_icc_umips_stub.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_icc_umips_stub.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_icc_spstub.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_icc_spstub.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_icc_spmb_stub.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_icc_spmb_stub.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_icc_parity_stub.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_icc_parity_stub.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_icc_mb_stub.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_icc_mb_stub.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_ejt_tap.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_ejt_tap.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_ejt_pdttcb_stub.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_ejt_pdttcb_stub.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_ejt_brk21.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_ejt_brk21.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_ejt_area.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_ejt_area.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_edp_clz.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_edp_clz.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_edp_buf_misc.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_edp_buf_misc.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_edp_add_simple.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_edp_add_simple.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_dcc_spstub.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_dcc_spstub.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_dcc_spmb_stub.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_dcc_spmb_stub.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_dcc_parity_stub.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_dcc_parity_stub.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_dcc_mb_stub.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_dcc_mb_stub.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_dcc_fb.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_dcc_fb.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_cpz_srs1.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_cpz_srs1.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_cpz_sps_stub.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_cpz_sps_stub.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_cpz_root_stub.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_cpz_root_stub.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_cpz_prid.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_cpz_prid.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_cpz_pc_top.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_cpz_pc_top.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_cpz_guest_stub.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_cpz_guest_stub.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_cpz_eicoffset_stub.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_cpz_eicoffset_stub.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_cpz_antitamper_stub.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_cpz_antitamper_stub.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_clock_buf.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_clock_buf.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_clockandlatch.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_clockandlatch.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gonzalo/Dropbox/ELO212-example-modules/MIPSfpga/rtl_up/m14k_cache_mux.v', nor could it be found using path 'C:/MIPSfpga/rtl_up/m14k_cache_mux.v'.
+INFO: [Common 17-14] Message 'Project 1-311' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:39 ; elapsed = 00:00:45 . Memory (MB): peak = 744.070 ; gain = 148.340
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 21 22:28:36 2017...
